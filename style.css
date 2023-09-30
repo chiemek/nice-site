@@ -131,10 +131,6 @@ header {
   margin-left: 5px;
 }
 
-.nav {
-  margin-left: 45rem;
-}
-
 .logo {
   margin-left: 10px;
   background-color: black;
@@ -177,9 +173,10 @@ a {
   font-size: 1.2rem;
 }
 
+.container,
 .section,
 h2 {
-  width: min(90%, 1000px);
+  width: min(80%, 1000px);
   margin-inline: auto;
 }
 
@@ -196,15 +193,9 @@ h2 {
   border: 2px solid black;
 }
 
-/* @media screen and (max-width: 555px) {
-  a {
-    display: none;
-    text-decoration: none;
-    font-family: rubikbold;
-    font-size: 1.2rem;
+@media screen and (max-width: 555px) {
+  .section,
+  h2 {
+    width: 70%;
   }
-
-  #bars {
-    display: flex;
-  }
-} */
+}
