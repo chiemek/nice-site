@@ -105,9 +105,10 @@ textarea:not([rows]) {
   font-weight: normal;
   font-style: normal;
 }
+/*  here my css starts */
 
 .container {
-  width: min(90%, 70rem);
+  width: min(80%, 70rem);
   margin-inline: auto;
 }
 
@@ -151,7 +152,6 @@ header {
 .logo-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 h1 {
@@ -164,7 +164,8 @@ ul {
   flex-direction: column;
   gap: 30px;
   align-content: center;
-  margin-right: 30rem;
+  margin-right: 20rem;
+  border: 2px solid black;
 }
 
 .hidden {
@@ -198,11 +199,16 @@ h2 {
 }
 
 @media screen and (max-width: 555px) {
+  body,
+  .container,
   .section,
   h2 {
-    width: 70%;
+    width: 90%;
   }
   .nav {
     margin-left: 5rem;
+  }
+  body {
+    width: 100%;
   }
 }
