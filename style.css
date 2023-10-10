@@ -35,8 +35,9 @@ ol[role="list"] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  width: 100%;
   line-height: 1.5;
-  font-family: rubikregular;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: wheat;
 }
 
@@ -90,125 +91,83 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* font imported*/
-@font-face {
-  font-family: "rubikbold";
-  src: url("./font/rubik-bold-webfont.woff2") format("woff2"),
-    url("./font/rubik-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "rubikregular";
-  src: url("./font/rubik-regular-webfont.woff2") format("woff2"),
-    url("./font/rubik-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /*  here my css starts */
-
-.container {
-  width: min(80%, 70rem);
-  margin-inline: auto;
-}
+/* styling header */
 
 header {
-  background-color: rgb(102, 207, 238);
-}
-
-.head {
   display: flex;
-  align-items: center;
+  border: 2px solid black;
+  padding: 5px;
   justify-content: space-between;
+  background-color: #d988b9;
 }
 
-.up {
+header .logo-container {
   display: flex;
+  border: 1px solid black;
   align-items: center;
-  gap: 20px;
 }
 
-.name {
-  margin-left: 5px;
-}
-
-.nav {
-  margin-left: 45rem;
-}
-
-.logo {
-  margin-left: 10px;
-  background-color: black;
-  width: 50px;
-  height: 50px;
+.logo-container .logo {
   border-radius: 100%;
+  background-color: aqua;
+  width: 5rem;
+  height: 3rem;
 }
 
-.first {
-  display: flex;
-  align-items: center;
+.logo-container .name {
+  padding-left: 5px;
 }
 
-.logo-container {
+nav ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* body styling */
+
+.container {
+  padding: 1.2rem;
+  text-align: justify;
+}
+
+.container .head {
   display: flex;
   justify-content: space-between;
 }
 
-h1 {
-  margin-top: 15px;
-}
-
-ul {
-  list-style: none;
+.container .up {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-content: center;
-  margin-right: 20rem;
+  justify-content: flex-start;
+}
+
+.fa-solid {
+  padding-top: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+p {
+  display: inline-block;
+  width: 100%;
+}
+
+.up #anchor {
+  padding-left: 2rem;
+}
+
+/* footer */
+footer {
   border: 2px solid black;
 }
 
-.hidden {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-  font-family: rubikbold;
-  font-size: 1.2rem;
-}
-
-.container,
-.section,
-h2 {
-  width: min(80%, 1000px);
-  margin-inline: auto;
-}
-
-.fa-bars {
-  position: fixed;
-  right: 20px;
-  top: 20px;
-}
-
-.fa-xmark {
-  position: fixed;
-  right: 40px;
-  top: 5px;
-  border: 2px solid black;
-}
-
-@media screen and (max-width: 555px) {
-  body,
-  .container,
-  .section,
-  h2 {
-    width: 90%;
-  }
-  .nav {
-    margin-left: 5rem;
-  }
-  body {
-    width: 100%;
-  }
+/* media query */
+@media (min-width: 630px) {
 }

@@ -10,11 +10,10 @@ const opener = function () {
   close.classList.remove("hidden");
   close.classList.add("fa-xmark");
   close.classList.add("fa-solid");
-  console.log(opener);
+  console.log("opener");
 };
 
 hamburger.addEventListener("click", opener);
-
 close.addEventListener("click", function () {
-  console.log("cancel");
+  console.log("close");
 });
