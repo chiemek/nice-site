@@ -210,7 +210,7 @@ nav ul {
   right: 0;
   left: 0;
   bottom: 0;
-  top: 5rem;
+  top: 5.5rem;
   margin-top: 0;
   padding-top: 5rem;
   font-size: 2rem;
@@ -267,7 +267,7 @@ footer {
 /* media query */
 @media (min-width: 780px) {
   nav ul {
-    display: flex;
+    display: flex !important;
     list-style: none;
     gap: 20px;
     align-items: center;
